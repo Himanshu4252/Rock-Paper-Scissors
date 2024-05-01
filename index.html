@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+        <header id="header">
+            <h2>Rock-Paper-Scissors</h2>
+        </header>
+        <div id="colBody">
+            <div id="user">
+                <div id="uIcon" class="icon">
+                    <i class="fa-solid fa-user ubIcon"></i>
+                </div>
+                <div id="uName" class="name">
+                    <h3 class="ubName">You</h3>
+                </div>
+                <div id="uScore" class="score"><h2 class="ubScore">0</h2></div>
+                <div id="uAction" class="action">
+                    <button class="allButtons" id="uRock">
+                        <i class="fa-regular fa-hand-back-fist ubAction"></i>
+                    </button>
+                    <button class="allButtons" id="uPaper">
+                        <i class="fa-regular fa-hand ubAction"></i>
+                    </button>
+                    <button class="allButtons" id="uScissors">
+                        <i class="fa-regular fa-hand-scissors ubAction"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="bot">
+                <div id="bIcon" class="icon">
+                    <i class="fa-solid fa-user-astronaut ubIcon "></i>
+                </div>
+                <div id="bName" class="name">
+                    <h3 class="ubName">Himanshu</h3>
+                </div>
+                <div id="bScore" class="score"><h2 class="ubScore">0</h2></div>
+                <div id="bAction" class="action">
+                    <button class="allButtons" id="bRock">
+                        <i class="fa-regular fa-hand-back-fist ubAction"></i>
+                    </button>
+                    <button class="allButtons" id="bPaper">
+                        <i class="fa-regular fa-hand ubAction"></i>
+                    </button>
+                    <button class="allButtons" id="bScissors">
+                        <i class="fa-regular fa-hand-scissors ubAction"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="countDown"><h1 id="counting"></h1></div>
+        </div>
+        <footer>
+           <button id="newBtn">New Game</button>
+        </footer>
+
+        <script src="rps2.js">
+        </script>
+</body>
+</html>

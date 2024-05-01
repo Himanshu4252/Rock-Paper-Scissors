@@ -1,0 +1,142 @@
+
+*{
+    box-sizing: border-box;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#colBody{
+        display: flex;
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+}
+#user{
+    height: 100%;
+    width: 50%;
+
+}
+.roundWinner{border: 2px solid yellow;
+    animation: border-animation 0.5s infinite alternate-reverse;
+}
+#bot{
+    height: 100%;
+    width: 50%;
+}
+.icon{
+    border: 2px solid;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    border: 2px solid;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+.score{
+    border: 2px solid;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action{
+    border: 2px solid;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+.ubIcon{
+    font-size: 12vh;
+
+}
+.ubScore{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 8vh;
+}
+.ubName{
+    margin-top: 1px
+}
+.allButtons{
+    border: 1px solid;
+    height: 60%;
+    width: 25%;
+    border-radius: 15px;
+}
+.bSelected{
+        background-color:green;
+        color: white;
+        box-shadow: 0px 4px 8px rgba(1, 1, 1, 1.5);
+}
+
+.uSelected{
+        background-color: green;
+        color: white;
+        box-shadow: 0px 4px 8px rgba(1, 1, 1, 1.5);
+}
+.ubAction{
+    font-size: 200%;
+}
+#countDown{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#counting{
+    color: rgb(0, 255, 0);
+    font-size: 20vh;
+    animation-name: ankii;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+footer{
+    border: 2px solid;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#newBtn{
+    color: rgb(241, 241, 241);
+    background-color: green;
+    font-size: large;
+    border-radius: 5vh;
+    height: 6vh;
+    width: 30vh;
+}
+@keyframes ankii {
+    from{
+        transform: scale(0);
+    
+    }
+    to {
+        transform: scale(100%);
+    }
+    
+}
+@keyframes border-animation{
+    0%{
+        border-width: 3px;
+    }
+    50%{
+        border-width: 5px;
+    }
+    75%{
+        border-width: 7px;
+    }
+    100%{
+        border-width: 9px;
+    }
+}
