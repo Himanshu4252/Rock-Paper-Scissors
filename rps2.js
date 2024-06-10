@@ -1,6 +1,8 @@
 
 let counter = document.getElementById("counting");
 let newGameBtn = document.getElementById("newBtn");
+let userScore = document.getElementById("userScore");
+let botScore = document.getElementById("botScore");
 
 let bActionRock = document.getElementById("bRock");
 let bActionPaper = document.getElementById("bPaper");
@@ -13,6 +15,8 @@ let uActionRock = document.getElementById("uRock");
 let uActionPaper = document.getElementById("uPaper");
 let uActionScissors = document.getElementById("uScissors");
 
+let bScoreCount = 0;
+let uScoreCount = 0;
 let count = 3;
 let bAction = 0;
 let userSelectedOption = 0;
@@ -67,8 +71,8 @@ function userAction(){
     uActionRock.addEventListener("click", uSelectedActionRock);
     uActionPaper.addEventListener("click", uSelectedActionPaper);
     uActionScissors.addEventListener("click", uSelectedActionScissors);
-    setTimeout(uDisabler, 1500);
-    setTimeout(result, 1700);
+    setTimeout(uDisabler, 1000);
+    setTimeout(result, 1200);
 }
 function uDisabler(){
     uActionRock.disabled = true;
@@ -147,22 +151,27 @@ function result(){
         counter.classList.add("draw");
         counter.style.display = "block";
         counter.innerText = "Draw !";
-        
 
     }
     else
     if(userSelectedOption === 1 && bAction === 2){
         console.log("Himanshu won");
+        bScoreCount++;
+        botScore.innerText = bScoreCount;
         
     }
     else
     if(userSelectedOption === 1 && bAction === 3){
         console.log("You won");
+        uScoreCount++;
+        userScore.innerText = uScoreCount;
         
     }
     else
     if(userSelectedOption === 2 && bAction === 1){
         console.log("you won");
+        uScoreCount++;
+        userScore.innerText = uScoreCount;
         
     }
     else
@@ -177,16 +186,22 @@ function result(){
     else
     if(userSelectedOption === 2 && bAction === 3){
         console.log("Himanshu won");
+        bScoreCount++;
+        botScore.innerText = bScoreCount;
         
     }
     else
     if(userSelectedOption === 3 && bAction === 1){
-        console.log("you won");
+        console.log("Himanshu won");
+        bScoreCount++;
+        botScore.innerText = bScoreCount;
         
     }
     else
     if(userSelectedOption === 3 && bAction === 2){
-        console.log("Himanshu won");
+        console.log("you won");
+        uScoreCount++;
+        userScore.innerText = uScoreCount;
         
     }
     else
